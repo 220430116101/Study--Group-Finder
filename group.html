@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Chat - Study Group Finder</title>
+  <link rel="stylesheet" href="group.css">
+  <script src="https://unpkg.com/lucide@latest"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <a href="home.html">
+            <img src="https://icon-library.com/images/group-study-icon/group-study-icon-25.jpg" alt="Study Group Finder Logo">
+        </a>
+        <span>StudyGroup Finder</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="group.html">Group</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+</nav> 
+
+  <div class="app">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h2><i data-lucide="users"></i> Groups</h2>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search Groups" class="search-input">
+      </div>
+
+      <!-- Group List -->
+      <div class="group-list">
+        <button class="group-item">Code Masters</button>
+        <button class="group-item">Math Wizards</button>
+        <button class="group-item">Physics Think Tank</button>
+        <button class="group-item">AI Enthusiasts</button>
+        <button class="group-item">Cyber Security Hub</button>
+      </div>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-section">
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <h2>Group Name</h2>
+        <div class="member-count">
+          <i data-lucide="users"></i> <span>9</span>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="messages" id="messages">
+        <!-- Messages will be inserted dynamically -->
+      </div>
+
+      <!-- Message Input -->
+      <div class="message-input-container">
+        <input type="text" id="messageInput" placeholder="Type Here" class="message-input">
+        <button class="send-button" onclick="sendMessage()">
+          <i data-lucide="send"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Group.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+
+/* About Page Layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Image Section */
+.image-content img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Content */
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    color: #003366;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    color: #003366;
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Contact Us Button */
+.contactUs {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contactUs:hover {
+    background-color: #ffdb4d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .image-content img {
+        max-width: 90%;
+    }
+}

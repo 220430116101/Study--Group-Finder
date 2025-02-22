@@ -1,0 +1,185 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #200313;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 240px;
+    background-color: #32051F;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #FFD700;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Header Section */
+.header-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.sign-in-btn {
+    padding: 10px 25px;
+    background-color: #32CD32;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-in-btn:hover {
+    background-color: #2E8B57;
+}
+
+.sign-in-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-header {
+    margin-left: 250px;
+    padding: 2rem;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  background: url('your-background.jpg') no-repeat center center/cover; */
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #dcdcdc;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 20px;
+    width: 500px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: -50px;
+}
+
+/* Statistics Section */
+.stats {
+    margin-left: 250px;
+    background-color: rgba(241, 241, 241, 0.951);
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.stat-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 32px;
+    color: #200313;
+}
+
+/* Best Study Group Section */
+.best-section {
+    background: linear-gradient(135deg, #dc3d2b, #f39c12, #e74c3c, #f0a731);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-left: 250px;
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    margin-left: 250px;
+    background-color: #32051F;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    width: calc(100% - 250px);
+}

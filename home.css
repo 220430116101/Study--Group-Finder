@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Header Section */
+.main-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+}
+
+.header-buttons {
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #ffcc00;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    border: none;
+    background: #ffcc00;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Stats Section */
+.stats {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.stat-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Best Section */
+.best-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+.footer small {
+    display: block;
+    margin-top: 10px;
+}
