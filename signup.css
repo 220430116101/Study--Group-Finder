@@ -6,6 +6,12 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -14,6 +20,10 @@
     background-color: #003366;
     padding: 1rem 2rem;
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Ensure navbar stays on top */
 }
 
 .logo {
@@ -45,11 +55,14 @@
 /* Sign-Up Section */
 .signup-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: calc(100vh - 60px - 60px); /* Adjust height based on navbar and footer */
     gap: 50px;
     padding: 20px;
+    padding-top: 100px; /* Leave space for fixed navbar */
 }
 
 /* Sign-Up Box */
@@ -61,6 +74,8 @@
     text-align: center;
     max-width: 400px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .signup-box h1 {
@@ -96,7 +111,7 @@
 .social-login {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin: 10px;
 }
 
 .google-login {
@@ -132,6 +147,8 @@
     background-color: #003366;
     color: white;
     padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 .footer small {
