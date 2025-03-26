@@ -104,16 +104,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
+    
 
     .about-container {
         flex-direction: column;
