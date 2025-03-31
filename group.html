@@ -6,28 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Group Chat - Study Group Finder</title>
   <link rel="stylesheet" href="group.css">
-  <script src="https://unpkg.com/lucide@latest"></script> 
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
-
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-        <a href="home.html">
-            <img src="https://icon-library.com/images/group-study-icon/group-study-icon-25.jpg" alt="Study Group Finder Logo">
-        </a>
-        <span>StudyGroup Finder</span>
+      <a href="home.html">
+        <img src="https://icon-library.com/images/group-study-icon/group-study-icon-25.jpg" alt="Study Group Finder Logo">
+      </a>
+      <span>StudyGroup Finder</span>
     </div>
     <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="group.html">Group</a></li>
-        <li><a href="search.html">Search</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="group.html">Group</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
     </ul>
-</nav> 
+  </nav>
 
   <div class="app">
     <!-- Sidebar -->
@@ -68,9 +67,10 @@
 
       <!-- Message Input -->
       <div class="message-input-container">
-        <input type="text" id="messageInput" placeholder="Type Here" class="message-input">
+        <input type="text" id="messageInput" placeholder="Type your message..." class="message-input">
         <button class="send-button" onclick="sendMessage()">
           <i data-lucide="send"></i>
+          Send
         </button>
       </div>
     </div>
