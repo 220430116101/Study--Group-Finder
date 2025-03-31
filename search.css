@@ -129,7 +129,7 @@ body {
 }
 
 /* Footer */
-.footer {
+/* .footer {
     text-align: center;
     background-color: #003366;
     color: white;
@@ -141,7 +141,7 @@ body {
 .footer small {
     display: block;
     margin-top: 10px;
-}
+} */
 
 /* Responsive Adjustments (Optional) */
 @media (max-width: 768px) {
