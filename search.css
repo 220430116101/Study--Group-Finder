@@ -6,6 +6,12 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -14,6 +20,10 @@
     background-color: #003366;
     padding: 1rem 2rem;
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .logo {
@@ -46,6 +56,7 @@
 .search-container {
     text-align: center;
     padding: 20px;
+    margin-top: 60px; /* Adjusted to account for fixed navbar height */
 }
 
 .search-bar {
@@ -56,7 +67,7 @@
     border-radius: 5px;
     padding: 10px;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto; /* Added top margin for spacing */
 }
 
 .search-bar input {
@@ -66,7 +77,7 @@
     padding: 5px;
 }
 
-/* Results Section */
+/* Results and Recommended Sections */
 .results-section, .recommended-section {
     text-align: center;
     padding: 20px;
@@ -77,7 +88,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto; /* Added top margin for spacing */
 }
 
 /* Result Items */
@@ -123,9 +134,24 @@
     background-color: #003366;
     color: white;
     padding: 20px;
+    width: 100%;
+    margin-top: auto;
 }
 
 .footer small {
     display: block;
     margin-top: 10px;
+}
+
+/* Responsive Adjustments (Optional) */
+@media (max-width: 768px) {
+    .stat-item {
+        width: calc(50% - 30px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-item {
+        width: 100%; /* Full width on very small screens */
+    }
 }
