@@ -53,6 +53,9 @@ document.getElementById("signupForm").addEventListener("submit", async function 
                 }, 50);
             }, 500); // Small delay to trigger after alert closes
 
+            // Store login status in localStorage
+    localStorage.setItem("isLoggedIn", "true");
+
             // Redirect to home page after 2 seconds
             setTimeout(() => {
                 window.location.href = "home.html";

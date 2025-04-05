@@ -32,6 +32,8 @@ document.getElementById("loginForm").addEventListener("submit", async function (
             // Store auth token
             localStorage.setItem("authToken", data.authToken);
 
+            localStorage.setItem("isLoggedIn", "true"); // Store login status in localStorage
+
             // Show success alert first
             // alert("Login successful!");
 
