@@ -117,6 +117,38 @@ document.querySelector('.search-input').addEventListener('input', function(e) {
   });
 });
 
+// Toggle upload options popup
+document.querySelector('.upload-button').addEventListener('click', function () {
+  const uploadContainer = document.querySelector('.upload-button-container');
+  uploadContainer.classList.toggle('active');
+});
+
+// Close popup when an option is selected
+function closeUploadOptions() {
+  document.querySelector('.upload-button-container').classList.remove('active');
+}
+
+// Upload option handlers
+function uploadPhoto() {
+  closeUploadOptions();
+  alert('Photo upload functionality coming soon!');
+}
+
+function uploadDocument() {
+  closeUploadOptions();
+  alert('Document upload functionality coming soon!');
+}
+
+function uploadVideo() {
+  closeUploadOptions();
+  alert('Video upload functionality coming soon!');
+}
+
+function uploadOtherFiles() {
+  closeUploadOptions();
+  alert('Other files upload functionality coming soon!');
+}
+
 // Initial setup
 selectGroup('Code Masters');
 renderMessages();

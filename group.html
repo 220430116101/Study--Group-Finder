@@ -67,6 +67,28 @@
 
       <!-- Message Input -->
       <div class="message-input-container">
+        <!-- Plus Button -->
+        <div class="upload-button-container">
+          <button class="upload-button">
+            <i data-lucide="plus"></i>
+          </button>
+          <div class="upload-options">
+            <button onclick="uploadPhoto()">
+              <i data-lucide="image"></i> Photo
+            </button>
+            <button onclick="uploadDocument()">
+              <i data-lucide="file-text"></i> Document
+            </button>
+            <button onclick="uploadVideo()">
+              <i data-lucide="video"></i> Video
+            </button>
+            <button onclick="uploadOtherFiles()">
+              <i data-lucide="paperclip"></i> Other Files
+            </button>
+          </div>
+        </div>
+
+        <!-- Message Input -->
         <input type="text" id="messageInput" placeholder="Type your message..." class="message-input">
         <button class="send-button" onclick="sendMessage()">
           <i data-lucide="send"></i>
