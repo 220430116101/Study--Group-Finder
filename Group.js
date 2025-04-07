@@ -38,7 +38,19 @@ function createMessageElement(message) {
   username.textContent = message.username;
   
   const messageText = document.createElement('div');
-  messageText.textContent = message.text;
+  // messageText.textContent = message.text;
+
+  if (message.file) {
+    // Display file link
+    const fileLink = document.createElement("a");
+    fileLink.href = URL.createObjectURL(message.file);
+    fileLink.textContent = message.file.name;
+    fileLink.target = "_blank";
+    messageText.appendChild(fileLink);
+} else {
+    // Display text message
+    messageText.textContent = message.text;
+}
   
   messageBubble.appendChild(username);
   messageBubble.appendChild(messageText);
@@ -152,3 +164,60 @@ function uploadOtherFiles() {
 // Initial setup
 selectGroup('Code Masters');
 renderMessages();
+
+
+
+// Sagar Edits:
+// Function to handle file uploads
+function handleFileUpload(type) {
+  const input = document.createElement("input");
+  input.type = "file";
+
+  // Set accepted file types based on the upload type
+  if (type === "photo") {
+      input.accept = "image/*"; // Accept only images
+  } else if (type === "document") {
+      input.accept = ".pdf,.doc,.docx,.txt"; // Accept common document formats
+  } else if (type === "video") {
+      input.accept = "video/*"; // Accept only videos
+  } else {
+      input.accept = "*"; // Accept all file types
+  }
+
+  // Trigger file selection dialog
+  input.click();
+
+  // Handle file selection
+  input.addEventListener("change", (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        // Add the file to the messages array
+        messages.push({
+            id: messages.length + 1,
+            file: file, // Add the file object
+            sender: "self", // Mark as sent by the user
+            username: "You"
+        });
+
+        // Re-render messages to display the uploaded file
+        renderMessages();
+    }
+});
+}
+
+// Upload option handlers
+function uploadPhoto() {
+  handleFileUpload("photo");
+}
+
+function uploadDocument() {
+  handleFileUpload("document");
+}
+
+function uploadVideo() {
+  handleFileUpload("video");
+}
+
+function uploadOtherFiles() {
+  handleFileUpload("other");
+}
